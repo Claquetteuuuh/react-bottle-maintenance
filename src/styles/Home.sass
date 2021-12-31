@@ -1,0 +1,499 @@
+@font-face
+    font-family: 'ZillaSlab' 
+    src: url('../font/ZillaSlab-Regular.ttf') 
+
+
+*
+    padding: 0 
+    margin: 0 
+    box-sizing: border-box 
+    text-decoration: none 
+    color: black 
+    scroll-behavior: smooth 
+
+
+::-webkit-scrollbar  
+    width: 10px 
+ 
+  
+::-webkit-scrollbar-track  
+    background: #f1f1f1 
+ 
+  
+::-webkit-scrollbar-thumb  
+    background: rgb(47, 47, 47) 
+    cursor: pointer 
+ 
+  
+::-webkit-scrollbar-thumb:hover  
+    cursor: pointer 
+    background: rgb(31, 31, 31) 
+ 
+
+
+body 
+    background-image: url("https://media.istockphoto.com/videos/water-bottling-factory-video-id845283190?s=640x640") 
+    background-repeat: no-repeat 
+    /* background-attachment: fixed  */
+    background-size: cover 
+    height: 100% 
+    width: 100% 
+
+#root
+    background: inherit
+
+.HomePage
+    background: inherit
+
+li 
+    list-style-type: none 
+ 
+.container 
+    height: 100vh 
+    width: 100% 
+    position: relative 
+    z-index: 1 
+    background: inherit 
+
+ 
+.container::before 
+    content: '' 
+    position: absolute 
+    background: inherit 
+    z-index: -1
+    inset: 0 
+    filter: blur(10px) 
+    
+.navbar 
+    z-index: 5 
+    height: 10%  
+    box-shadow: 2px 12px 50px 3px rgba(0, 0, 0, 0.103) 
+    display: flex 
+    width: 100% 
+    position: fixed 
+ 
+.left 
+    position: relative 
+    width: 30% 
+ 
+.left img 
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translate(-50%, -50%) 
+    width: 80px 
+    height: 80px 
+
+ 
+.right 
+    width: 70% 
+ 
+.right ul 
+    width: 70% 
+    position: relative 
+    right: -30% 
+    top: 25% 
+    display: flex 
+    font-family: 'ZillaSlab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-weight: 600 
+    font-size: 2vw 
+ 
+.right li 
+    margin: 0% 2% 
+    transition-duration: 0.3s 
+ 
+.nav-link:hover 
+    margin-top: -5px 
+    transition-duration: 0.2s 
+ 
+.contact 
+    display: flex 
+    flex-direction: column 
+ 
+.hovered 
+    cursor: pointer 
+    position: relative 
+    display: flex 
+ 
+.hovered img 
+    transition-duration: 0.4s 
+    margin-left: 5% 
+    position: absolute 
+    top: 55% 
+    left: 100% 
+    transform: translate(-0%, -50%) 
+    height: 1.5vh 
+    width: 1.5vw 
+ 
+.hided 
+    font-weight: 400 
+    font-size: 1.4vw 
+    cursor: pointer 
+    width: 100% 
+    margin-left: 10% 
+    margin-top: 20% 
+    overflow: hidden 
+    height: 0 
+    transition-duration: 0.5s 
+    opacity: 0 
+    box-shadow: 2px 12px 50px 3px rgba(0, 0, 0, 0.103) 
+    padding: 5% 
+    border-bottom-left-radius: 10px 
+    border-bottom-right-radius: 10px 
+ 
+.contact:hover .hided 
+    opacity: 1 
+    transition-duration: 0.7s 
+    height: 100% 
+
+ 
+.contact:hover .hovered img 
+    transition-duration: 0.5s 
+    margin-top: -10px 
+    transform: rotate(180deg) 
+ 
+.hided p:hover 
+    font-weight: 700 
+ 
+
+.texts 
+    position: relative 
+    top: 30% 
+    left: 50% 
+    transform: translate(-50%, -50%) 
+    width: 100% 
+    text-align: center 
+ 
+.project-name 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 5vw 
+    font-weight: 900 
+    letter-spacing: 3px 
+    margin-bottom: 0 
+ 
+.slogan 
+    margin-top: 0 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 2vw 
+    font-weight: 700 
+    letter-spacing: 3px 
+ 
+.bold-maintenance 
+    font-weight: 800 
+
+.post-avis
+    height: 10%
+    width: 80%
+    background-color: #FA4D02
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px
+    box-shadow: 2px 12px 50px 3px rgba(0, 0, 0, 0.678);
+    display: flex
+
+.avis-form
+    display: flex
+    height: 90%
+    width: 90%
+
+.push-pseudo
+    
+
+#presentation 
+    height: 50vh 
+    width: 100% 
+    background-color: #ffffff 
+ 
+.presentation-container 
+    height: 80% 
+    position: relative 
+    top: 50% 
+    left: 50% 
+    transform: translate(-50%, -50%) 
+    width: 80% 
+    display: flex 
+ 
+.presentation-left 
+    height: 100% 
+    position: relative 
+    top: 50% 
+    left: 10% 
+    transform: translate(0, -50%) 
+    width: 40% 
+ 
+.presentation-left h3 
+    position: relative 
+    top: 10% 
+    font-size: 1.7vw 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-weight: 500 
+    margin-bottom: 12% 
+ 
+
+.presentation-left p 
+    width: 90% 
+    font-size: 1vw 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-weight: 400 
+    letter-spacing: 1px 
+ 
+
+.presentation-right 
+    position: relative 
+    top: 50% 
+    left: 0 
+    transform: translate(30%, -50%) 
+    width: 40% 
+ 
+.presentation-right img 
+    min-height: 300px 
+    min-width: 500px 
+    height: 35vh 
+    width: 35vw 
+    opacity: 1 
+ 
+.bold 
+    font-weight: 700 
+ 
+
+#why-us 
+    height: 55vh 
+    width: 100% 
+    background-color: #f5f7fa 
+ 
+.why-us-container 
+    display: flex 
+    height: 90% 
+ 
+
+.why-us-left 
+    position: relative 
+    top: 50% 
+    left: 50% 
+    transform: translate(-70%, -50%) 
+    height: 90% 
+    width: 50% 
+    display: flex 
+ 
+.why-us-left img 
+    
+    min-height: 470px 
+    min-width: 500px 
+    height: 70% 
+    width: 30% 
+    opacity: 0
+ 
+
+.why-us-right 
+    position: relative 
+    top: 50% 
+    transform: translate(0, -50%) 
+    width: 50% 
+    height: 100% 
+    display: flex 
+    flex-direction: column 
+ 
+.left-bis 
+    position: relative 
+    top: 10% 
+    left: 5% 
+    margin-bottom: 5% 
+    width: 60% 
+ 
+.left-bis h4 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 1.2vw 
+    font-weight: 500 
+ 
+.left-bis p 
+    margin-left: 15px 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 1vw 
+    font-weight: 400 
+ 
+
+.right-bis 
+    width: 60% 
+    position: relative 
+    left: 25% 
+    top: 5% 
+    text-align: right 
+
+ 
+.right-bis h4 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 1.2vw 
+    font-weight: 500 
+ 
+.right-bis p     
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    font-size: 1vw 
+    font-weight: 400 
+    margin-right: 15px 
+ 
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 414px)  
+    body 
+        background-image: url("/img/chaine-embouteillage-phone.svg") 
+     
+    .navbar 
+        display: none 
+     
+
+    .texts 
+        top: 40% 
+     
+    .project-name 
+        color: white 
+        font-size: 7vw 
+        letter-spacing: 1px 
+     
+    .slogan 
+        margin-top: 20px 
+        letter-spacing: 2px 
+        font-size: 5vw 
+        font-weight: 700 
+        color: white 
+
+     
+    #presentation 
+        min-height: 70vh 
+     
+    .presentation-container 
+        flex-direction: column-reverse 
+        top: 0% 
+        left: 0 
+        transform: translate(-0, 0) 
+        width: 100% 
+        height: 100% 
+     
+    .presentation-left 
+        top: 5% 
+        left: 50% 
+        transform: translate(-50%, 0) 
+        width: 80% 
+        text-align: center 
+        height: 50% 
+     
+    .presentation-left h3 
+        top: 0% 
+        font-size: 5vw 
+        width: 100% 
+        margin-bottom: 5% 
+     
+    .presentation-left p 
+        position: relative 
+        left: 50% 
+        transform: translate(-50%, 0) 
+        font-size: 2.8vw 
+        font-weight: 500 
+        letter-spacing: 0 
+        width: 95% 
+     
+    .presentation-right 
+        top: 5% 
+        left: 50% 
+        transform: translate(-50%,0) 
+        width: 80% 
+        height: 50% 
+     
+    .presentation-right img 
+        position: relative 
+        //  left: 50% 
+        // transform: translate(-50%, 0) 
+        min-width: 10% 
+        min-height: 10% 
+        //  max-width: 300px 
+        // max-height: 200px  
+        width: 100% 
+        height: 100% 
+     
+
+    #why-us 
+        height: 90vh 
+     
+    .why-us-container 
+        display: flex 
+        flex-direction: column 
+        height: 98% 
+        width: 100% 
+
+     
+    .why-us-left 
+        position: relative 
+        left: 50% 
+        top: 5% 
+        transform: translate(-50%) 
+        height: 30% 
+        width: 90% 
+
+     
+    .why-us-left img 
+        min-height: 200px 
+        min-width: 200px 
+        top: 55% 
+     
+    .why-us-right 
+        top: 10% 
+        position: relative 
+        left: 50% 
+        transform: translate(-50%) 
+        height: 50% 
+        width: 90% 
+     
+    .left-bis 
+        margin-top: 2% 
+        width: 80% 
+     
+    .left-bis h4 
+        margin-top: 0 
+        font-size: 11px 
+     
+    .left-bis p 
+        font-size: 9px 
+        font-weight: 500 
+     
+
+    .right-bis 
+        margin-top: 2% 
+        left: 15% 
+        width: 80% 
+     
+    .right-bis h4 
+        margin-top: 2% 
+        font-size: 11px 
+     
+    .right-bis p 
+        font-size: 9px 
+        font-weight: 500 
+     
+
+
+
+    @media screen and (min-height: 660px) 
+        #why-us 
+            height: 70vh 
+         
+        .left-bis 
+            margin-top: 3% 
+            width: 80% 
+         
+
+        .right-bis 
+            margin-top: 3% 
+            left: 15% 
+            width: 80% 
+         
+
+        .right-bis h4 
+            margin-top: 3% 
+            font-size: 11px 
+         
+     
+ 
+
