@@ -13,10 +13,10 @@ const PostAvis = () => {
 
     return (
         <div className='post-avis' ref={el => {form = el}}>
-            <form className='avis-form'>
-                <input type="text" className='push-avis' placeholder='exemple: Bon service, je vous le recommande'/>
-                <input type="text" className='push-pseudo' placeholder='exemple: Jean-luc'/>
-                <input type="text" className='push-id' placeholder='exemple: 12DS9398'/>
+            <form className='avis-form' action='/avis/post' method='post'>
+                <input type="text" name='avis' className='push-avis' placeholder='exemple: Bon service, je vous le recommande'/>
+                <input type="text" name='pseudo' className='push-pseudo' placeholder='exemple: Jean-luc'/>
+                <input type="text" name='id' className='push-id' placeholder='exemple: 12DS9398'/>
                 <input type="submit" className='sub'/>
             </form>
         </div>
