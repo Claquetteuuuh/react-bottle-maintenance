@@ -46,7 +46,7 @@ const Title = () => {
                 <p className="slogan" ref={el => {slogan = el}}>Chouchoutez vos machines avec <span className="bold-maintenance" ref={el => {nameInSlogan = el}}>Bottle maintenance</span> !</p>
             </div>
 
-            {/* <PostAvis/> */}
+            <PostAvis/>
             
 
         </div>
